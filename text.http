@@ -1,0 +1,91 @@
+# @baseUrl=http://localhost:3000
+@baseUrl=https://codelab-final-api.herokuapp.com
+@categoryPlantLibraryId=4
+@categoryPlantLibraryFilterId=2
+@categoryFirstAids=3
+
+### Plant Libraries ###
+
+#Get List Category 
+GET {{baseUrl}}/categoryPlantLibraries
+
+###   
+#  Get List  
+GET {{baseUrl}}/plantLibraries
+
+###
+# Add new Plat Library
+POST {{baseUrl}}/plantLibraries
+Content-Type: application/json
+
+{
+ "id": "7",
+  "categoryPlantLibraryId": "1",
+  "createdAt": "",
+  "name": "Alocasia Polly 4",
+  "difficulty": "Intermediate",
+  "size": "Medium",
+  "light": "Avoid direct sun",
+  "room": "Bed- and livingroom",
+  "about": "About this plant",
+  "watering": "Text about watering.",
+  "tips": "Text about tips.",
+  "images": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.healthline.com%2Fhealth%2Fforget-you-have-plants-11-types-that-will-forgive-you&psig=AOvVaw1eEFvyDigBaPzGiI8U4Woy&ust=1622537141719000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCKgoLE8_ACFQAAAAAdAAAAABAD",
+  "videos": ""
+}
+
+###
+# Edit Plat Library
+@idPlant = 6
+PUT {{baseUrl}}/plantLibraries/{{idPlant}}
+Content-Type: application/json
+
+{ 
+  "categoryPlantLibraryId": "2",
+  "createdAt": "",
+  "name": "Alocasia Polly 1",
+  "difficulty": "Intermediate",
+  "size": "Medium",
+  "light": "Avoid direct sun",
+  "room": "Bed- and livingroom",
+  "about": "About this plant",
+  "watering": "Text about watering.",
+  "tips": "Text about tips.",
+  "images": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.healthline.com%2Fhealth%2Fforget-you-have-plants-11-types-that-will-forgive-you&psig=AOvVaw1eEFvyDigBaPzGiI8U4Woy&ust=1622537141719000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCKgoLE8_ACFQAAAAAdAAAAABAD",
+  "videos": ""
+}
+
+###   
+#  Get Plant Library
+GET {{baseUrl}}/plantLibraries/{{categoryPlantLibraryId}}
+  
+###
+# Filter by Id CategoryPlantLibrary 
+GET {{baseUrl}}/plantLibraries?categoryPlantLibraryId={{categoryPlantLibraryFilterId}}
+
+###
+
+
+GET {{baseUrl}}/plantLibraries?q=Ab
+
+
+###
+
+
+### First Aid ###
+
+#  Get List Category  
+GET {{baseUrl}}/categoryFirstAids
+
+###
+#  Get List First Aid
+GET {{baseUrl}}/firstAids
+
+###
+# Get List First Aid
+GET {{baseUrl}}/listFirstAids
+
+###
+# Filter First Aid by CategoryFirstAid Id
+GET {{baseUrl}}/firstAids?categoryFirstAids={{categoryFirstAids}}
+GET {{baseUrl}}/firstAids?categoryFirstAids={{categoryFirstAids}}

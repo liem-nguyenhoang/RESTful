@@ -1,0 +1,307 @@
+{
+  "bodies": [
+    {
+      "id": 1,
+      "name": "Women"
+    },
+    {
+      "id": 2,
+      "name": "Men"
+    },
+    {
+      "id": 3,
+      "name": "Kids"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Clothes"
+    },
+    {
+      "id": 2,
+      "name": "Shoes"
+    },
+    {
+      "id": 3,
+      "name": "Accesories"
+    }
+  ],
+  "styles": [
+    {
+      "id": 1,
+      "name": "Tops"
+    },
+    {
+      "id": 2,
+      "name": "Shirts & Blouses"
+    },
+    {
+      "id": 3,
+      "name": "Cardigans & Sweaters"
+    },
+    {
+      "id": 4,
+      "name": "Knitwear"
+    },
+    {
+      "id": 5,
+      "name": "Blazers"
+    },
+    {
+      "id": 6,
+      "name": "Outerwear"
+    },
+    {
+      "id": 7,
+      "name": "Pants"
+    },
+    {
+      "id": 8,
+      "name": "Jeans"
+    },
+    {
+      "id": 9,
+      "name": "Shorts"
+    },
+    {
+      "id": 10,
+      "name": "Skirts"
+    },
+    {
+      "id": 11,
+      "name": "Dresses-h"
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "name": "Adidas"
+    },
+    {
+      "id": 2,
+      "name": "Adidas Originals"
+    },
+    {
+      "id": 3,
+      "name": "Blend"
+    },
+    {
+      "id": 4,
+      "name": "Boutique Moschino"
+    },
+    {
+      "id": 5,
+      "name": "Champion"
+    },
+    {
+      "id": 6,
+      "name": "Diesel"
+    },
+    {
+      "id": 7,
+      "name": "Jack & Jones"
+    },
+    {
+      "id": 8,
+      "name": "Naf Naf"
+    },
+    {
+      "id": 9,
+      "name": "Red Valentino"
+    },
+    {
+      "id": 10,
+      "name": "s.Oliver"
+    }
+  ],
+  "sizes": [
+    {
+      "id": 1,
+      "name": "XS"
+    },
+    {
+      "id": 2,
+      "name": "S"
+    },
+    {
+      "id": 3,
+      "name": "M"
+    },
+    {
+      "id": 4,
+      "name": "L"
+    },
+    {
+      "id": 5,
+      "name": "XL"
+    },
+    {
+      "id": 6,
+      "name": "XXL"
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "name": "",
+      "value": "#F6F6F6"
+    },
+    {
+      "id": 2,
+      "name": "",
+      "value": "#ABB4BD"
+    },
+    {
+      "id": 3,
+      "name": "",
+      "value": "#EF3651"
+    },
+    {
+      "id": 4,
+      "name": "",
+      "value": "#1E1F28"
+    },
+    {
+      "id": 5,
+      "name": "",
+      "value": "#2A2C36"
+    },
+    {
+      "id": 6,
+      "name": "",
+      "value": "#FF3E3E"
+    },
+    {
+      "id": 7,
+      "name": "",
+      "value": "#FF2424"
+    },
+    {
+      "id": 8,
+      "name": "",
+      "value": "##55D85A"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "idBody": 1,
+      "idCategory": 1,
+      "idStyle": 1,
+      "idBrand": 1,
+      "idSize": [
+        2,
+        3
+      ],
+      "name": "Pullover",
+      "nameShop": "Mango",
+      "description": "Description",
+      "price": 51.95,
+      "sale": 0,
+      "start": 4.5,
+      "commend": "commend",
+      "liked": false,
+      "inBag": false,
+      "amount": 0,
+      "images": [
+        {
+          "id": 1,
+          "colorId": 1,
+          "link": "link1"
+        },
+        {
+          "id": 2,
+          "colorId": 4,
+          "link": "link2"
+        },
+        {
+          "id": 3,
+          "colorId": 7,
+          "link": "link3"
+        }
+      ],
+      "createdAt": 1623904003201,
+      "updatedAt": 1623904003201
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "idUser": 1,
+      "idProduct": 1,
+      "liked": true
+    }
+  ],
+  "bags": [
+    {
+      "id": 1,
+      "idUser": 1,
+      "idProduct": 1,
+      "inBag": true,
+      "quantity": 10
+    }
+  ],
+  "shipAddresses": [
+    {
+      "id": 1,
+      "idUser": 1,
+      "name": "Street 1"
+    },
+    {
+      "id": 2,
+      "idUser": 1,
+      "name": "Street 2"
+    },
+    {
+      "id": 3,
+      "idUser": 1,
+      "name": "Street 3"
+    }
+  ],
+  "statusOrders": [
+    {
+      "id": 1,
+      "name": "Delivered"
+    },
+    {
+      "id": 2,
+      "name": "Processing"
+    },
+    {
+      "id": 3,
+      "name": "Cancelled"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "idUser": 1,
+      "idProduct": 1,
+      "idShipAddress": 1,
+      "idStatusOrder": 1,
+      "createdAt": 1623904003201
+    }
+  ],
+  "orderHistories": [
+    {
+      "id": 1,
+      "idUser": 1,
+      "idProduct": 1,
+      "idShipAddress": 1,
+      "idStatusOrder": 1,
+      "sale": 0.2,
+      "amount": 10,
+      "createdAt": 1623904003201,
+      "updatedAt": 1623904003201
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "idShipAddress": 1,
+      "name": "Matilda Brown",
+      "mail": "matildabrown@mail.com"
+    }
+  ]
+}
