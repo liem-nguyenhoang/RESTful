@@ -31,8 +31,7 @@ server.use("/api", router);
 // }, 1500000);
 
 // Start server
-const HOST = "127.0.0.1";
 const PORT = process.env.PORT || 3000;
-server.listen(PORT, HOST, () => {
-  console.log(`Server running at http://${HOST}:${PORT}/`);
+server.listen(PORT, () => {
+  console.log("Server running");
 });
